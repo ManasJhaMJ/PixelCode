@@ -1,0 +1,99 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #0e121a;
+}
+.nav-links {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  width: 100%;
+  font-family: "Minecraft Regular";
+  z-index: 2;
+}
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+.nav-links li a {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+.nav-links li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before {
+  width: 100%;
+}
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gridlines {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-img {
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 0 0 10px #34efdf;
+}
+
+.pixel {
+  font-family: "Minecraft Regular";
+}
+
+.code {
+  font-family: "Devil Breeze Bold";
+  font-size: 100px;
+}
+
+.tagline {
+  position: absolute;
+  top: 50%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #fff;
+  text-shadow: 0 0 10px #34efdf;
+  font-family: "Minecraft Regular";
+}
