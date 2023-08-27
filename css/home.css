@@ -346,8 +346,8 @@ h1:nth-child(6) {
 /* Style the counter cards */
 .cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
@@ -356,6 +356,7 @@ h1:nth-child(6) {
   background-color: #0e121a;
   color: white;
   font-size: 30px;
+  border-radius: 20px;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
