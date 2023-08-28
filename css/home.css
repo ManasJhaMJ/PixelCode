@@ -52,7 +52,7 @@ img {
   transition: all 0.4s ease;
 }
 .nav-links li a:hover:before {
-  width: 100%;
+  width: 70%;
 }
 .nav-links li.center a:before {
   left: 50%;
@@ -75,6 +75,7 @@ img {
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   position: relative;
+  z-index: 1;
 }
 
 .name1 {
@@ -327,7 +328,7 @@ img {
 .column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -341,6 +342,11 @@ img {
   content: "";
   display: table;
   clear: both;
+}
+
+#why {
+  z-index: 1;
+  position: relative;
 }
 
 /* Style the counter cards */
@@ -359,7 +365,7 @@ img {
   color: white;
   font-size: 30px;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -374,21 +380,24 @@ img {
 .zoom {
   transition: transform 1s; /* Animation */
   margin: 0 auto;
+  transition: all 0.6s ease-in-out;
 }
 
 .zoom:hover {
-  transform: scale(
-    1.5
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+  filter: brightness(80%);
 }
 
 #about {
-  border-radius: 276px 276px 0px 0px;
+  /* border-radius: 270px 270px 0px 0px; */
+  border-radius: 400px;
   background: #24a19c;
   mix-blend-mode: hard-light;
   width: 100%;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .about-head {
@@ -400,22 +409,29 @@ img {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .about-body {
   color: #fff;
   text-align: center;
-  font-family: cursive;
+  /* font-family: "Poppins", cursive; */
+  font-family: "Minecraft Regular";
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+  width: 50%;
+  padding-top: 10%;
+  text-align: left;
 }
 
 .about-img {
   height: 450px;
   width: 450px;
+  display: flex;
+  justify-content: left;
 }
 
 ::-webkit-scrollbar {
