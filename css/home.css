@@ -37,7 +37,7 @@ img {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
-  padding: 6px 16px;
+  padding: 10px 50px;
   text-decoration: none;
 }
 .nav-links li a:before {
@@ -89,10 +89,9 @@ img {
 
 .name2 {
   position: absolute;
-  top: 65%;
-  left: 3%;
+  top: 51%;
+  left: 75%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
   color: #fff;
   text-shadow: 0 0 20px #34efdf;
 }
@@ -103,15 +102,16 @@ img {
 
 .code {
   font-family: "Devil Breeze Bold";
-  font-size: 100px;
+  font-size: 99px;
 }
 
 .tagline {
   position: absolute;
-  top: 55%;
-  left: 85%;
+  top: 96%;
+  left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
-  font-size: 35px;
+  font-size: 25px;
   color: #fff;
   text-shadow: 0 0 20px #34efdf;
   font-family: "Minecraft Regular";
@@ -122,7 +122,7 @@ img {
   margin: 30vw auto;
 }
 
-h1 {
+.glitch {
   text-align: center;
   color: #fff;
   font-size: 5em;
@@ -137,22 +137,22 @@ h1 {
   animation: glitch1 5s infinite;
 }
 
-h1:nth-child(2) {
+.glitch:nth-child(2) {
   color: #67f3da;
   animation: glitch2 5s infinite;
 }
 
-h1:nth-child(3) {
+.glitch:nth-child(3) {
   color: #f16f6f;
   animation: glitch3 5s infinite;
 }
 
-h1:nth-child(5) {
+.glitch:nth-child(5) {
   color: #67f3da;
   animation: glitch2 5s infinite;
 }
 
-h1:nth-child(6) {
+.glitch:nth-child(6) {
   color: #f16f6f;
   animation: glitch3 5s infinite;
 }
@@ -345,18 +345,21 @@ h1:nth-child(6) {
 
 /* Style the counter cards */
 .cards {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
   font-family: "Minecraft Regular";
-  background-image: url(../images/main/card-bg.png);
+  /* background-image: url(../images/main/card-bg.png); */
+  background-image: linear-gradient(#0079b8, #01937c);
   background-color: #0e121a;
   color: white;
   font-size: 30px;
   border-radius: 20px;
+  z-index: 1;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -366,6 +369,53 @@ h1:nth-child(6) {
     display: block;
     margin-bottom: 20px;
   }
+}
+
+.zoom {
+  transition: transform 1s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#about {
+  border-radius: 276px 276px 0px 0px;
+  background: #24a19c;
+  mix-blend-mode: hard-light;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.about-head {
+  color: #fff;
+  text-shadow: -1px -1px 23px rgba(45, 236, 249, 0.6);
+  font-family: "Minecraft Regular";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.about-body {
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.about-img {
+  height: 450px;
+  width: 450px;
 }
 
 ::-webkit-scrollbar {
