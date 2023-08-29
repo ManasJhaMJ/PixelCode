@@ -80,7 +80,6 @@ img {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
 }
 
 .hero-img {
@@ -472,8 +471,8 @@ img {
   }
 
   .nav-links li a {
-    font-size: 9px;
-    padding: 1px 8px;
+    font-size: 8px;
+    padding: 1px 5px;
   }
 
   #hero {
@@ -500,14 +499,14 @@ img {
 
   .name1 {
     font-size: 50px;
-    top: 65%;
+    top: 68%;
     left: 25%;
     text-align: center;
   }
 
   .name2 {
     font-size: 60px;
-    top: 75%;
+    top: 78%;
     left: 25%;
     text-align: center;
   }
