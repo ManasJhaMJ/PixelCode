@@ -472,7 +472,7 @@ img {
 
   .nav-links li a {
     font-size: 8px;
-    padding: 1px 5px;
+    padding: 1px 4px;
   }
 
   #hero {
@@ -519,11 +519,11 @@ img {
   }
 
   .rows {
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
   .cards {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   #about {
