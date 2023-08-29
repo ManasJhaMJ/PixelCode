@@ -75,11 +75,16 @@ img {
   display: none;
 }
 
+.display3 {
+  display: none;
+}
+
 .arrow {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .hero-img {
@@ -465,13 +470,70 @@ img {
   background: linear-gradient(transparent, #56b5a3);
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 771px) and (max-width: 1441px) {
+}
+
+@media (min-width: 426px) and (max-width: 770px) {
   .nav-links {
     padding: 10px 10px;
   }
 
   .nav-links li a {
-    font-size: 8px;
+    font-size: 15px;
+    padding: 1px 40px;
+  }
+
+  #hero {
+    height: max-content;
+  }
+
+  .display3 {
+    display: block;
+  }
+
+  .hero-img {
+    height: 100%;
+    margin: 0px;
+    padding-top: 50px;
+  }
+
+  .gridlines {
+    height: 100%;
+  }
+
+  .name1 {
+    font-size: 50px;
+    top: 72%;
+    left: 15%;
+    text-align: center;
+  }
+
+  .name2 {
+    font-size: 62px;
+    top: 73%;
+    left: 55%;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 20px;
+    top: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .rows {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 426px) {
+  .nav-links {
+    padding: 10px 10px;
+  }
+
+  .nav-links li a {
+    font-size: 10px;
     padding: 1px 4px;
   }
 
@@ -491,6 +553,10 @@ img {
 
   .display1 {
     display: none;
+  }
+
+  .display3 {
+    display: block;
   }
 
   .gridlines {
@@ -519,7 +585,7 @@ img {
   }
 
   .rows {
-    padding-top: 35px;
+    padding-top: 55px;
   }
 
   .cards {
@@ -536,12 +602,59 @@ img {
   }
 
   .about-img {
-    height: 400px;
-    width: 400px;
+    height: 340px;
+    width: 310px;
   }
 
   .about-body {
     padding-top: 1px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .nav-links li a {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+
+  .rows {
+    padding-top: 100px;
+  }
+
+  .name1 {
+    font-size: 50px;
+    top: 55%;
+    left: 22%;
+    text-align: center;
+  }
+
+  .name2 {
+    font-size: 60px;
+    top: 65%;
+    left: 22%;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 12px;
+    top: 75%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .display3 {
+    display: block;
+  }
+
+  .cards {
+    font-size: 18px;
   }
 }
