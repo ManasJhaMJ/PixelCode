@@ -37,7 +37,7 @@ img {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 50px;
+  padding: 10px 45px;
   text-decoration: none;
 }
 .nav-links li a:before {
@@ -52,7 +52,7 @@ img {
   transition: all 0.4s ease;
 }
 .nav-links li a:hover:before {
-  width: 70%;
+  width: 47%;
 }
 .nav-links li.center a:before {
   left: 50%;
@@ -71,11 +71,24 @@ img {
   height: 100%;
 }
 
+.display2 {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
 .hero-img {
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .name1 {
@@ -86,15 +99,18 @@ img {
   font-size: 80px;
   color: #fff;
   text-shadow: 0 0 20px #34efdf;
+  z-index: 3;
 }
 
 .name2 {
   position: absolute;
   top: 51%;
-  left: 75%;
+  left: 76%;
   transform: translate(-50%, -50%);
+  font-size: 100px;
   color: #fff;
   text-shadow: 0 0 20px #34efdf;
+  z-index: 3;
 }
 
 .pixel {
@@ -103,7 +119,6 @@ img {
 
 .code {
   font-family: "Devil Breeze Bold";
-  font-size: 99px;
 }
 
 .tagline {
@@ -116,6 +131,7 @@ img {
   color: #fff;
   text-shadow: 0 0 20px #34efdf;
   font-family: "Minecraft Regular";
+  z-index: 3;
 }
 
 .container {
@@ -126,7 +142,6 @@ img {
 .glitch {
   text-align: center;
   color: #fff;
-  font-size: 5em;
   letter-spacing: 8px;
   font-weight: 400;
   /*Create overlap*/
@@ -390,14 +405,13 @@ img {
 
 #about {
   /* border-radius: 270px 270px 0px 0px; */
-  border-radius: 400px;
+  border-radius: 200px;
   background: #24a19c;
   mix-blend-mode: hard-light;
   width: 100%;
+  height: max-content;
   padding: 30px;
   text-align: center;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .about-head {
@@ -422,7 +436,6 @@ img {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
-  width: 50%;
   padding-top: 10%;
   text-align: left;
 }
@@ -430,8 +443,12 @@ img {
 .about-img {
   height: 450px;
   width: 450px;
-  display: flex;
-  justify-content: left;
+  /* display: flex;
+  justify-content: left; */
+}
+
+.row {
+  padding-left: 10%;
 }
 
 ::-webkit-scrollbar {
@@ -447,4 +464,85 @@ img {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #56b5a3);
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .nav-links {
+    padding: 10px 10px;
+  }
+
+  .nav-links li a {
+    font-size: 9px;
+    padding: 1px 8px;
+  }
+
+  #hero {
+    height: max-content;
+  }
+
+  .hero-img {
+    padding-top: 45px;
+    height: 100%;
+    margin: 0px;
+  }
+
+  .display2 {
+    display: block;
+  }
+
+  .display1 {
+    display: none;
+  }
+
+  .gridlines {
+    height: 100%;
+  }
+
+  .name1 {
+    font-size: 50px;
+    top: 65%;
+    left: 25%;
+    text-align: center;
+  }
+
+  .name2 {
+    font-size: 60px;
+    top: 75%;
+    left: 25%;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 12px;
+    top: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .rows {
+    padding-top: 30px;
+  }
+
+  .cards {
+    font-size: 25px;
+  }
+
+  #about {
+    border-radius: 100px;
+  }
+
+  .about-head {
+    padding-top: 25px;
+    font-size: 50px;
+  }
+
+  .about-img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .about-body {
+    padding-top: 1px;
+    font-size: 16px;
+  }
 }
