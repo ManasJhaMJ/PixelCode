@@ -79,12 +79,16 @@ img {
   display: none;
 }
 
+.display4 {
+  display: none;
+}
+
 .arrow {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero-img {
@@ -368,6 +372,18 @@ img {
   position: relative;
 }
 
+.why-title {
+  color: #fff;
+  text-shadow: -1px -1px 23px rgba(45, 236, 249, 0.6);
+  font-family: "Minecraft Regular";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+
 /* Style the counter cards */
 .cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -441,14 +457,12 @@ img {
   line-height: normal;
   text-transform: capitalize;
   padding-top: 10%;
-  text-align: left;
+  text-align: center;
 }
 
 .about-img {
   height: 450px;
   width: 450px;
-  /* display: flex;
-  justify-content: left; */
 }
 
 .row {
@@ -470,7 +484,82 @@ img {
   background: linear-gradient(transparent, #56b5a3);
 }
 
-@media (min-width: 771px) and (max-width: 1441px) {
+@media (min-width: 771px) and (max-width: 1025px) {
+  .nav-links {
+    padding: 10px 10px;
+  }
+
+  .nav-links li a {
+    font-size: 15px;
+    padding: 1px 40px;
+  }
+
+  #hero {
+    height: max-content;
+  }
+
+  .display3 {
+    display: block;
+  }
+
+  .display1 {
+    display: none;
+  }
+
+  .display4 {
+    display: block;
+  }
+
+  .why-title {
+    display: block;
+    top: 110%;
+    left: 33%;
+    font-size: 70px;
+  }
+
+  .hero-img {
+    height: 100%;
+    margin: 0px;
+    padding-top: 52px;
+  }
+
+  .gridlines {
+    height: 100%;
+  }
+
+  .name1 {
+    font-size: 50px;
+    top: 45%;
+    left: 3%;
+    text-align: center;
+  }
+
+  .name2 {
+    font-size: 62px;
+    top: 46%;
+    right: 3%;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 20px;
+    top: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .rows {
+    padding-top: 10px;
+    position: relative;
+  }
+
+  .row {
+    padding-left: 0px;
+  }
+
+  .cards {
+    font-size: 23px;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 770px) {
@@ -489,6 +578,12 @@ img {
 
   .display3 {
     display: block;
+  }
+
+  .why-title {
+    display: block;
+    top: 110%;
+    left: 30%;
   }
 
   .hero-img {
@@ -524,6 +619,25 @@ img {
 
   .rows {
     padding-top: 10px;
+  }
+
+  .row {
+    margin-left: 10px;
+    width: auto;
+  }
+
+  .about-body {
+    font-size: 20px;
+    margin-left: 100px;
+    padding-top: 0px;
+  }
+
+  .about-img {
+    margin-left: 30px;
+  }
+
+  .cards {
+    font-size: 15px;
   }
 }
 
@@ -588,6 +702,10 @@ img {
     padding-top: 55px;
   }
 
+  .row {
+    padding-left: 0px;
+  }
+
   .cards {
     font-size: 23px;
   }
@@ -620,6 +738,10 @@ img {
 
   .rows {
     padding-top: 100px;
+  }
+
+  .row {
+    padding-left: 0px;
   }
 
   .name1 {
