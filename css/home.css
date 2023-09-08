@@ -579,6 +579,11 @@ img {
   position: relative;
 }
 
+.apply-button {
+  left: 44%;
+  top: 50%;
+}
+
 .flip-card {
   background-color: transparent;
   width: 400px;
@@ -735,6 +740,11 @@ footer {
 
   .cards {
     font-size: 23px;
+  }
+
+  .apply-button {
+    left: 41%;
+    top: 59%;
   }
 }
 
@@ -947,6 +957,10 @@ footer {
 
   #apply {
     height: auto;
+  }
+
+  .apply-button {
+    left: 27%;
   }
 }
 /* small mobile screens */
