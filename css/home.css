@@ -581,7 +581,7 @@ img {
 }
 
 .apply-button {
-  top: 50%;
+  top: 60%;
 }
 
 .flip-card {
@@ -643,9 +643,46 @@ img {
 footer {
   height: 50%;
   background: #123549;
+  color: #49d9ff;
   position: relative;
   bottom: 0px;
   left: 0px;
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Minecraft Regular";
+}
+
+.footer {
+  display: flex;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 50px;
+}
+
+.footer1 {
+  width: 50%;
+  text-align: left;
+}
+
+.footer2 {
+  width: 50%;
+  text-align: right;
+}
+
+.socials {
+  color: #49d9ff;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.socials:hover {
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
   width: 100%;
 }
 
@@ -749,6 +786,17 @@ footer {
   #apply {
     text-align: center;
   }
+
+  .apply-button {
+    top: 65%;
+  }
+
+  .footer {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+  }
 }
 
 /* tablet screens */
@@ -848,6 +896,17 @@ footer {
   #apply {
     height: auto;
     text-align: center;
+  }
+
+  .apply-button {
+    top: 65%;
+  }
+
+  .footer {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
   }
 }
 
@@ -962,6 +1021,17 @@ footer {
   #apply {
     height: auto;
     text-align: center;
+  }
+
+  .apply-button {
+    top: 65%;
+  }
+
+  .footer {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
   }
 }
 /* small mobile screens */
