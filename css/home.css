@@ -135,7 +135,7 @@ img {
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 23px;
   color: #fff;
   text-shadow: 0 0 20px #34efdf;
   font-family: "Minecraft Regular";
@@ -1064,7 +1064,7 @@ footer {
   .footer {
     display: flex;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 30px;
     padding-bottom: 10px;
   }
 }
