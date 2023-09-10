@@ -424,10 +424,6 @@ img {
 }
 
 #about {
-  /* border-radius: 270px 270px 0px 0px; */
-  /* border-radius: 200px;
-  background: #24a19c;
-  mix-blend-mode: hard-light; */
   padding-top: 2%;
   width: 100%;
   height: max-content;
@@ -439,8 +435,8 @@ img {
   border-radius: 50px;
   background: #24a19c;
   mix-blend-mode: hard-light;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 180px;
+  margin-right: 180px;
   text-align: center;
 }
 
@@ -465,7 +461,7 @@ img {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
-  padding-top: 2%;
+  padding: 1%;
   letter-spacing: 2px;
 }
 
@@ -475,7 +471,7 @@ img {
 }
 
 .row1 {
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 #apply {
@@ -882,20 +878,21 @@ footer {
     padding-top: 10px;
   }
 
-  .row {
-    margin-left: 10px;
+  .row1 {
+    margin-left: 5px;
     width: auto;
     margin-right: 0px;
   }
 
   .about-body {
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 15px;
     padding-top: 0px;
+    width: 80%;
   }
 
   .about-img {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 
   .cards {
@@ -996,7 +993,7 @@ footer {
   }
 
   .row1 {
-    padding-left: 0px;
+    padding-left: 0%;
   }
 
   .row {
@@ -1030,6 +1027,7 @@ footer {
   .about-body {
     padding-top: 1px;
     font-size: 16px;
+    padding: 4%;
   }
 
   .card-img-top {
